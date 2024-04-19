@@ -1,0 +1,146 @@
+
+2023-09-12 19:33:02,646	INFO worker.py:1636 -- Started a local Ray instance.
+/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py:442: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+`UnifiedLogger` will be removed in Ray 2.7.
+  return UnifiedLogger(config, logdir, loggers=None)
+/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `JsonLogger interface is deprecated in favor of the `ray.tune.json.JsonLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `CSVLogger interface is deprecated in favor of the `ray.tune.csv.CSVLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/logger/unified.py:53: RayDeprecationWarning: This API is deprecated and may be removed in future Ray releases. You could suppress this warning by setting env variable PYTHONWARNINGS="ignore::DeprecationWarning"
+The `TBXLogger interface is deprecated in favor of the `ray.tune.tensorboardx.TBXLoggerCallback` interface and will be removed in Ray 2.7.
+  self._loggers.append(cls(self.config, self.logdir, self.trial))
+2023-09-12 19:33:08,186	INFO algorithm.py:536 -- Current log_level is WARN. For more information, set 'log_level': 'INFO' / 'DEBUG' or use the -v and -vv flags.
+[36m(RolloutWorker pid=93495)[39m controller init
+[36m(RolloutWorker pid=93495)[39m controller init finished
+[36m(RolloutWorker pid=93495)[39m ============ {'Apple|-01.65|+00.81|+00.07': 0, 'Bowl|+00.28|+00.92|+01.09': 1, 'Bread|+00.26|+00.99|-00.08': 2, 'ButterKnife|+01.67|+00.69|-00.11': 3, 'Cabinet|-00.50|+00.48|-01.15': 4, 'Cabinet|-01.39|+00.48|-01.15': 5, 'Cabinet|-00.63|+02.02|-01.45': 6, 'Cabinet|-01.70|+02.02|-01.45': 7, 'Cabinet|+01.79|+02.02|-00.82': 8, 'Cabinet|+00.50|+00.48|-01.15': 9, 'Cabinet|+00.41|+00.48|+00.45': 10, 'Cabinet|+01.71|+02.02|-01.45': 11, 'Cabinet|+01.39|+00.48|-01.15': 12, 'CellPhone|-00.31|+00.92|+01.29': 13, 'Chair|00.00|+00.00|+01.24': 14, 'CoffeeMachine|+01.36|+00.90|-01.60': 15, 'CounterTop|+00.00|+00.95|-01.51': 16, 'CounterTop|-00.02|+00.96|+00.51': 17, 'Cup|+00.90|+01.67|-01.61': 18, 'DishSponge|-00.55|+00.92|-01.39': 19, 'Drawer|+00.81|+00.48|-01.16': 20, 'Drawer|+01.50|+00.20|-00.02': 21, 'Drawer|+01.50|+00.63|-00.02': 22, 'Drawer|+01.50|+00.14|+00.60': 23, 'Drawer|+01.50|+00.60|-00.02': 24, 'Drawer|+01.50|+00.20|+01.22': 25, 'Drawer|+01.50|+00.78|+01.22': 26, 'Drawer|+01.50|+00.31|+00.60': 27, 'Drawer|+01.50|+00.54|+00.60': 28, 'Drawer|+01.50|+00.63|+00.61': 29, 'Drawer|+01.50|+00.43|-00.02': 30, 'Drawer|-00.70|+00.48|-01.16': 31, 'Drawer|+01.50|+00.52|+01.22': 32, 'Egg|+00.13|+00.95|-00.17': 33, 'Faucet|+00.00|+00.91|-01.68': 34, 'Floor|+00.00|+00.00|+00.00': 35, 'Fork|+01.69|+00.90|+01.45': 36, 'Fridge|-01.76|+00.00|00.00': 37, 'GarbageCan|-01.80|+00.01|+01.33': 38, 'Kettle|+01.68|+00.90|+00.09': 39, 'Knife|+00.60|+00.91|-01.44': 40, 'Ladle|+01.79|+00.93|+01.13': 41, 'Lettuce|-01.71|+00.82|-00.14': 42, 'LightSwitch|-00.15|+01.29|+03.70': 43, 'Microwave|+01.93|+00.90|-00.77': 44, 'Mug|-00.24|+00.92|-00.26': 45, 'Pan|-01.29|+00.90|-01.35': 46, 'PepperShaker|+01.89|+00.90|+00.03': 47, 'Plate|+01.32|+01.67|-01.60': 48, 'Pot|+00.89|+00.90|-01.41': 49, 'Potato|+00.33|+00.94|+01.31': 50, 'SaltShaker|+02.01|+00.90|+00.03': 51, 'Sink|+00.00|+00.89|-01.44': 52, 'Sink|+00.00|+00.89|-01.44|SinkBasin': 53, 'SoapBottle|-00.56|+00.90|-01.57': 54, 'Spatula|+01.78|+00.91|-00.13': 55, 'Spoon|+01.62|+00.90|+01.40': 56, 'StoveBurner|+01.77|+00.90|+00.60': 57, 'StoveBurner|+01.98|+00.90|+00.38': 58, 'StoveBurner|+01.98|+00.90|+00.82': 59, 'StoveBurner|+01.77|+00.90|+00.38': 60, 'StoveBurner|+01.98|+00.90|+00.60': 61, 'StoveBurner|+01.77|+00.90|+00.82': 62, 'StoveKnob|+01.60|+00.92|+00.46': 63, 'StoveKnob|+01.60|+00.92|+00.68': 64, 'StoveKnob|+01.60|+00.92|+00.74': 65, 'StoveKnob|+01.60|+00.92|+00.63': 66, 'StoveKnob|+01.60|+00.92|+00.57': 67, 'StoveKnob|+01.60|+00.92|+00.52': 68, 'Toaster|+01.98|+00.90|-00.34': 69, 'Tomato|+00.17|+00.97|-00.28': 70, 'Window|-03.24|+01.62|+02.69': 71, 'Window|-00.01|+01.58|-01.82': 72, 'Window|+02.22|+01.57|-00.39': 73}
+[36m(RolloutWorker pid=93495)[39m 2023-09-12 19:33:15,922	WARNING env.py:155 -- Your env doesn't have a .spec.max_episode_steps attribute. Your horizon will default to infinity, and your environment will not be reset.
+[36m(RolloutWorker pid=93495)[39m obs_len 33
+[36m(RolloutWorker pid=93495)[39m obs_len 33
+[36m(RolloutWorker pid=93495)[39m obs_len 33
+[36m(RolloutWorker pid=93495)[39m compare dict
+[36m(RolloutWorker pid=93495)[39m ================= ['RotateLeft', 0]
+[36m(RolloutWorker pid=93495)[39m action--------------------- Drop Ladle|+01.79|+00.93|+01.13 OrderedDict([('action', array([7])), ('tar_index', array([21]))]) False
+[36m(RolloutWorker pid=93495)[39m ======================
+[36m(RolloutWorker pid=93495)[39m reward -0.1
+[36m(RolloutWorker pid=93495)[39m here is the error!
+[36m(RolloutWorker pid=93495)[39m {'_disable_preprocessor_api': False, '_disable_action_flattening': False, 'fcnet_hiddens': [256, 256], 'fcnet_activation': 'tanh', 'conv_filters': None, 'conv_activation': 'relu', 'post_fcnet_hiddens': [], 'post_fcnet_activation': 'relu', 'free_log_std': False, 'no_final_linear': False, 'vf_share_layers': True, 'use_lstm': True, 'max_seq_len': 20, 'lstm_cell_size': 64, 'lstm_use_prev_action': False, 'lstm_use_prev_reward': False, '_time_major': False, 'use_attention': False, 'attention_num_transformer_units': 1, 'attention_dim': 64, 'attention_num_heads': 1, 'attention_head_dim': 32, 'attention_memory_inference': 50, 'attention_memory_training': 50, 'attention_position_wise_mlp_dim': 32, 'attention_init_gru_gate_bias': 2.0, 'attention_use_n_prev_actions': 0, 'attention_use_n_prev_rewards': 0, 'framestack': True, 'dim': 84, 'grayscale': False, 'zero_mean': True, 'custom_model': 'helper', 'custom_model_config': {}, 'custom_action_dist': None, 'custom_preprocessor': None, 'encoder_latent_dim': None, 'always_check_shapes': False, 'lstm_use_prev_action_reward': -1, '_use_default_native_models': -1}
+[36m(RolloutWorker pid=93495)[39m False
+[36m(RolloutWorker pid=93495)[39m /home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/torch/nn/modules/rnn.py:812: UserWarning: LSTM with projections is not supported with oneDNN. Using default implementation. (Triggered internally at /opt/conda/conda-bld/pytorch_1682343995026/work/aten/src/ATen/native/RNN.cpp:1463.)
+[36m(RolloutWorker pid=93495)[39m   result = _VF.lstm(input, hx, self._flat_weights, self.bias, self.num_layers,
+2023-09-12 19:33:18,446	ERROR actor_manager.py:507 -- Ray error, taking actor 1 out of service. The actor died because of an error raised in its creation task, [36mray::RolloutWorker.__init__()[39m (pid=93495, ip=10.1.120.219, actor_id=e8d3c1897070f2f9eddd332501000000, repr=<ray.rllib.evaluation.rollout_worker.RolloutWorker object at 0x7f95deddb0a0>)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/rollout_worker.py", line 738, in __init__
+    self._update_policy_map(policy_dict=self.policy_dict)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/rollout_worker.py", line 1985, in _update_policy_map
+    self._build_policy_map(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/rollout_worker.py", line 2097, in _build_policy_map
+    new_policy = create_policy_for_framework(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/policy.py", line 142, in create_policy_for_framework
+    return policy_class(observation_space, action_space, merged_config)
+  File "/home/zhihao/A2SP/rllib_A2SP/model/custom_policy.py", line 42, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/ppo/ppo_torch_policy.py", line 64, in __init__
+    self._initialize_loss_from_dummy_batch()
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/policy/policy.py", line 1489, in _initialize_loss_from_dummy_batch
+    self.loss(self.model, self.dist_class, train_batch)
+  File "/home/zhihao/A2SP/rllib_A2SP/model/custom_policy.py", line 148, in loss
+    self.pre_loss_list.append(pre_loss)
+AttributeError: 'CustomPolicy' object has no attribute 'pre_loss_list'
+Traceback (most recent call last):
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/worker_set.py", line 172, in __init__
+    self._setup(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/worker_set.py", line 242, in _setup
+    self.add_workers(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/worker_set.py", line 635, in add_workers
+    raise result.get()
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/actor_manager.py", line 488, in __fetch_result
+    result = ray.get(r)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 18, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 2542, in get
+    raise value
+ray.exceptions.RayActorError: The actor died because of an error raised in its creation task, [36mray::RolloutWorker.__init__()[39m (pid=93495, ip=10.1.120.219, actor_id=e8d3c1897070f2f9eddd332501000000, repr=<ray.rllib.evaluation.rollout_worker.RolloutWorker object at 0x7f95deddb0a0>)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/rollout_worker.py", line 738, in __init__
+    self._update_policy_map(policy_dict=self.policy_dict)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/rollout_worker.py", line 1985, in _update_policy_map
+    self._build_policy_map(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/rollout_worker.py", line 2097, in _build_policy_map
+    new_policy = create_policy_for_framework(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/policy.py", line 142, in create_policy_for_framework
+    return policy_class(observation_space, action_space, merged_config)
+  File "/home/zhihao/A2SP/rllib_A2SP/model/custom_policy.py", line 42, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/ppo/ppo_torch_policy.py", line 64, in __init__
+    self._initialize_loss_from_dummy_batch()
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/policy/policy.py", line 1489, in _initialize_loss_from_dummy_batch
+    self.loss(self.model, self.dist_class, train_batch)
+  File "/home/zhihao/A2SP/rllib_A2SP/model/custom_policy.py", line 148, in loss
+    self.pre_loss_list.append(pre_loss)
+AttributeError: 'CustomPolicy' object has no attribute 'pre_loss_list'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/zhihao/A2SP/rllib_A2SP/main.py", line 206, in <module>
+    .build()
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm_config.py", line 1071, in build
+    return algo_class(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 475, in __init__
+    super().__init__(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 170, in __init__
+    self.setup(copy.deepcopy(self.config))
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 601, in setup
+    self.workers = WorkerSet(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/worker_set.py", line 194, in __init__
+    raise e.args[0].args[2]
+AttributeError: 'CustomPolicy' object has no attribute 'pre_loss_list'
+Traceback (most recent call last):
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/worker_set.py", line 172, in __init__
+    self._setup(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/worker_set.py", line 242, in _setup
+    self.add_workers(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/worker_set.py", line 635, in add_workers
+    raise result.get()
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/actor_manager.py", line 488, in __fetch_result
+    result = ray.get(r)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/auto_init_hook.py", line 18, in auto_init_wrapper
+    return fn(*args, **kwargs)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 2542, in get
+    raise value
+ray.exceptions.RayActorError: The actor died because of an error raised in its creation task, [36mray::RolloutWorker.__init__()[39m (pid=93495, ip=10.1.120.219, actor_id=e8d3c1897070f2f9eddd332501000000, repr=<ray.rllib.evaluation.rollout_worker.RolloutWorker object at 0x7f95deddb0a0>)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/rollout_worker.py", line 738, in __init__
+    self._update_policy_map(policy_dict=self.policy_dict)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/rollout_worker.py", line 1985, in _update_policy_map
+    self._build_policy_map(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/rollout_worker.py", line 2097, in _build_policy_map
+    new_policy = create_policy_for_framework(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/utils/policy.py", line 142, in create_policy_for_framework
+    return policy_class(observation_space, action_space, merged_config)
+  File "/home/zhihao/A2SP/rllib_A2SP/model/custom_policy.py", line 42, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/ppo/ppo_torch_policy.py", line 64, in __init__
+    self._initialize_loss_from_dummy_batch()
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/policy/policy.py", line 1489, in _initialize_loss_from_dummy_batch
+    self.loss(self.model, self.dist_class, train_batch)
+  File "/home/zhihao/A2SP/rllib_A2SP/model/custom_policy.py", line 148, in loss
+    self.pre_loss_list.append(pre_loss)
+AttributeError: 'CustomPolicy' object has no attribute 'pre_loss_list'
+During handling of the above exception, another exception occurred:
+Traceback (most recent call last):
+  File "/home/zhihao/A2SP/rllib_A2SP/main.py", line 206, in <module>
+    .build()
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm_config.py", line 1071, in build
+    return algo_class(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 475, in __init__
+    super().__init__(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/tune/trainable/trainable.py", line 170, in __init__
+    self.setup(copy.deepcopy(self.config))
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/algorithms/algorithm.py", line 601, in setup
+    self.workers = WorkerSet(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/rllib/evaluation/worker_set.py", line 194, in __init__
+    raise e.args[0].args[2]
+AttributeError: 'CustomPolicy' object has no attribute 'pre_loss_list'

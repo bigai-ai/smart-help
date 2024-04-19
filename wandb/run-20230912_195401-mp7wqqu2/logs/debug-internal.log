@@ -1,0 +1,409 @@
+2023-09-12 19:54:01,415 INFO    StreamThr :119537 [internal.py:wandb_internal():86] W&B internal server running at pid: 119537, started at: 2023-09-12 19:54:01.415426
+2023-09-12 19:54:01,416 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status
+2023-09-12 19:54:01,417 INFO    WriterThread:119537 [datastore.py:open_for_write():85] open: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/run-mp7wqqu2.wandb
+2023-09-12 19:54:01,419 DEBUG   SenderThread:119537 [sender.py:send():379] send: header
+2023-09-12 19:54:01,419 DEBUG   SenderThread:119537 [sender.py:send():379] send: run
+2023-09-12 19:54:02,240 INFO    SenderThread:119537 [dir_watcher.py:__init__():211] watching files in: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files
+2023-09-12 19:54:02,240 INFO    SenderThread:119537 [sender.py:_start_run_threads():1121] run started: mp7wqqu2 with start time 1694519641.415277
+2023-09-12 19:54:02,245 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: check_version
+2023-09-12 19:54:02,245 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: check_version
+2023-09-12 19:54:02,514 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: run_start
+2023-09-12 19:54:02,528 DEBUG   HandlerThread:119537 [system_info.py:__init__():32] System info init
+2023-09-12 19:54:02,528 DEBUG   HandlerThread:119537 [system_info.py:__init__():47] System info init done
+2023-09-12 19:54:02,528 INFO    HandlerThread:119537 [system_monitor.py:start():181] Starting system monitor
+2023-09-12 19:54:02,528 INFO    SystemMonitor:119537 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-09-12 19:54:02,529 INFO    HandlerThread:119537 [system_monitor.py:probe():201] Collecting system info
+2023-09-12 19:54:02,529 INFO    SystemMonitor:119537 [interfaces.py:start():190] Started cpu monitoring
+2023-09-12 19:54:02,529 INFO    SystemMonitor:119537 [interfaces.py:start():190] Started disk monitoring
+2023-09-12 19:54:02,530 INFO    SystemMonitor:119537 [interfaces.py:start():190] Started gpu monitoring
+2023-09-12 19:54:02,531 INFO    SystemMonitor:119537 [interfaces.py:start():190] Started memory monitoring
+2023-09-12 19:54:02,533 INFO    SystemMonitor:119537 [interfaces.py:start():190] Started network monitoring
+2023-09-12 19:54:02,542 DEBUG   HandlerThread:119537 [system_info.py:probe():196] Probing system
+2023-09-12 19:54:02,543 DEBUG   HandlerThread:119537 [system_info.py:_probe_git():181] Probing git
+2023-09-12 19:54:02,547 DEBUG   HandlerThread:119537 [system_info.py:_probe_git():189] Probing git done
+2023-09-12 19:54:02,547 DEBUG   HandlerThread:119537 [system_info.py:probe():244] Probing system done
+2023-09-12 19:54:02,547 DEBUG   HandlerThread:119537 [system_monitor.py:probe():210] {'os': 'Linux-6.2.0-32-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2023-09-12T11:54:02.542405', 'startedAt': '2023-09-12T11:54:01.413156', 'docker': None, 'cuda': None, 'args': ('--agent_num', '2', '--run', 'PPO'), 'state': 'running', 'program': '/home/zhihao/A2SP/rllib_A2SP/main.py', 'codePathLocal': 'main.py', 'codePath': 'main.py', 'git': {'remote': 'https://github.com/caozh20/rllib_A2SP.git', 'commit': '535f67871d238125d447d6d2b78163a2f48a85ef'}, 'email': 'caozh20@foxmail.com', 'root': '/home/zhihao/A2SP/rllib_A2SP', 'host': 'zhihao3070', 'username': 'zhihao', 'executable': '/home/zhihao/anaconda3/envs/rllib/bin/python', 'cpu_count': 16, 'cpu_count_logical': 32, 'cpu_freq': {'current': 3210.04409375, 'min': 2200.0, 'max': 3400.0}, 'cpu_freq_per_core': [{'current': 3664.473, 'min': 2200.0, 'max': 3400.0}, {'current': 3011.374, 'min': 2200.0, 'max': 3400.0}, {'current': 3398.164, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 3202.767, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 3606.82, 'min': 2200.0, 'max': 3400.0}, {'current': 3774.838, 'min': 2200.0, 'max': 3400.0}, {'current': 4427.878, 'min': 2200.0, 'max': 3400.0}, {'current': 4746.095, 'min': 2200.0, 'max': 3400.0}, {'current': 3777.897, 'min': 2200.0, 'max': 3400.0}, {'current': 3674.113, 'min': 2200.0, 'max': 3400.0}, {'current': 4036.319, 'min': 2200.0, 'max': 3400.0}, {'current': 3772.298, 'min': 2200.0, 'max': 3400.0}, {'current': 3373.572, 'min': 2200.0, 'max': 3400.0}, {'current': 3718.133, 'min': 2200.0, 'max': 3400.0}, {'current': 4026.081, 'min': 2200.0, 'max': 3400.0}, {'current': 2609.941, 'min': 2200.0, 'max': 3400.0}, {'current': 3781.92, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 3123.165, 'min': 2200.0, 'max': 3400.0}, {'current': 3410.197, 'min': 2200.0, 'max': 3400.0}, {'current': 3728.326, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}, {'current': 2200.0, 'min': 2200.0, 'max': 3400.0}], 'disk': {'/': {'total': 1832.2072448730469, 'used': 117.52191925048828}}, 'gpu': 'NVIDIA GeForce RTX 3070', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3070', 'memory_total': 8589934592}], 'memory': {'total': 62.6903190612793}}
+2023-09-12 19:54:02,547 INFO    HandlerThread:119537 [system_monitor.py:probe():211] Finished collecting system info
+2023-09-12 19:54:02,547 INFO    HandlerThread:119537 [system_monitor.py:probe():214] Publishing system info
+2023-09-12 19:54:02,547 DEBUG   HandlerThread:119537 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2023-09-12 19:54:02,547 DEBUG   HandlerThread:119537 [system_info.py:_save_pip():68] Saving pip packages done
+2023-09-12 19:54:02,547 DEBUG   HandlerThread:119537 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2023-09-12 19:54:03,242 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/conda-environment.yaml
+2023-09-12 19:54:03,242 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/requirements.txt
+2023-09-12 19:54:04,158 DEBUG   HandlerThread:119537 [system_info.py:_save_conda():87] Saving conda packages done
+2023-09-12 19:54:04,158 INFO    HandlerThread:119537 [system_monitor.py:probe():216] Finished publishing system info
+2023-09-12 19:54:04,162 DEBUG   SenderThread:119537 [sender.py:send():379] send: files
+2023-09-12 19:54:04,162 INFO    SenderThread:119537 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2023-09-12 19:54:04,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:54:04,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:54:04,166 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:54:04,240 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/conda-environment.yaml
+2023-09-12 19:54:04,241 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/wandb-metadata.json
+2023-09-12 19:54:04,693 DEBUG   SenderThread:119537 [sender.py:send():379] send: telemetry
+2023-09-12 19:54:05,197 INFO    wandb-upload_0:119537 [upload_job.py:push():131] Uploaded file /tmp/tmp0bt780h1wandb/u4vt73uf-wandb-metadata.json
+2023-09-12 19:54:06,241 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:06,690 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:54:08,241 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:12,406 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:54:14,243 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:16,243 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:17,457 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:54:19,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:54:19,166 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:54:19,168 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:54:20,245 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:22,245 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:22,639 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:54:24,246 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:26,246 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:27,646 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:54:28,247 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:30,247 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:32,248 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:32,719 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:54:33,248 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/config.yaml
+2023-09-12 19:54:34,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:54:34,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:54:34,167 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:54:34,248 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:36,249 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:38,067 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:54:38,249 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:40,249 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:42,250 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:43,119 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:54:44,250 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:46,251 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:48,162 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:54:48,251 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:49,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:54:49,166 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:54:49,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:54:50,252 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:52,252 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:53,219 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:54:54,253 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:56,253 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:58,254 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:54:58,256 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:00,254 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:02,255 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:02,533 DEBUG   SystemMonitor:119537 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-09-12 19:55:02,540 DEBUG   SenderThread:119537 [sender.py:send():379] send: stats
+2023-09-12 19:55:03,304 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:04,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:55:04,166 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:55:04,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:55:04,255 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:06,256 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:08,256 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:08,342 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:10,257 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:12,257 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:13,393 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:14,260 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:16,260 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:18,261 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:18,428 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:19,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:55:19,166 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:55:19,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:55:20,261 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:22,262 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:23,486 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:24,262 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:26,263 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:28,263 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:28,544 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:30,264 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:32,264 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:32,534 DEBUG   SenderThread:119537 [sender.py:send():379] send: stats
+2023-09-12 19:55:33,571 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:34,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:55:34,167 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:55:34,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:55:34,265 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:36,265 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:38,266 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:38,613 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:40,267 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:42,267 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:43,660 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:44,268 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:46,268 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:48,269 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:48,687 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:49,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:55:49,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:55:49,167 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:55:50,269 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:52,270 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:53,734 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:55:54,270 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:56,275 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:58,275 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:55:58,767 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:00,275 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:02,276 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:02,535 DEBUG   SenderThread:119537 [sender.py:send():379] send: stats
+2023-09-12 19:56:03,819 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:04,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:56:04,167 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:56:04,168 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:56:04,285 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:07,285 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:09,152 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:09,286 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:11,287 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:13,287 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:14,211 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:15,287 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:17,288 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:19,166 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:56:19,167 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:56:19,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:56:19,288 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:19,668 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:21,289 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:23,290 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:24,719 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:25,290 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:27,292 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:29,292 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:30,059 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:31,293 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:32,536 DEBUG   SenderThread:119537 [sender.py:send():379] send: stats
+2023-09-12 19:56:33,293 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:34,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:56:34,167 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:56:34,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:56:35,122 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:35,294 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:37,294 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:39,295 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:40,162 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:41,296 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:43,296 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:45,183 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:45,297 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:47,297 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:49,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:56:49,167 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:56:49,168 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:56:49,298 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:50,226 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:51,298 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:53,299 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:55,275 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:56:55,299 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:57,300 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:56:59,300 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:00,318 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:01,301 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:02,536 DEBUG   SenderThread:119537 [sender.py:send():379] send: stats
+2023-09-12 19:57:03,301 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:04,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:57:04,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:57:04,167 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:57:05,302 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:05,359 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:07,302 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:09,303 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:10,514 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:11,303 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:13,304 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:15,304 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:16,471 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:17,305 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:19,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:57:19,167 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:57:19,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:57:19,305 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:21,306 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:21,547 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:23,306 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:25,307 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:26,583 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:27,307 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:29,308 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:31,321 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:31,638 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:32,537 DEBUG   SenderThread:119537 [sender.py:send():379] send: stats
+2023-09-12 19:57:33,321 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:34,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:57:34,167 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:57:34,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:57:35,322 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:36,758 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:37,322 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:39,323 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:41,323 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:41,824 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:43,324 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:45,324 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:46,875 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:47,325 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:49,171 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:57:49,171 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:57:49,172 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:57:49,325 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:51,326 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:51,919 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:53,326 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:55,327 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:57,163 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:57:57,327 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:57:59,328 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:58:01,328 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:58:02,197 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:58:02,537 DEBUG   SenderThread:119537 [sender.py:send():379] send: stats
+2023-09-12 19:58:03,329 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:58:04,167 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: stop_status
+2023-09-12 19:58:04,168 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: stop_status
+2023-09-12 19:58:04,169 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:58:05,330 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:58:07,237 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:58:07,331 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:58:10,332 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:58:12,195 DEBUG   SenderThread:119537 [sender.py:send():379] send: exit
+2023-09-12 19:58:12,195 INFO    SenderThread:119537 [sender.py:send_exit():584] handling exit code: 1
+2023-09-12 19:58:12,195 INFO    SenderThread:119537 [sender.py:send_exit():586] handling runtime: 249
+2023-09-12 19:58:12,196 INFO    SenderThread:119537 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 19:58:12,196 INFO    SenderThread:119537 [sender.py:send_exit():592] send defer
+2023-09-12 19:58:12,196 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:12,196 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 0
+2023-09-12 19:58:12,196 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:12,196 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 0
+2023-09-12 19:58:12,196 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 1
+2023-09-12 19:58:12,196 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:12,197 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 1
+2023-09-12 19:58:12,197 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:12,197 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 1
+2023-09-12 19:58:12,197 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 2
+2023-09-12 19:58:12,197 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:12,197 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 2
+2023-09-12 19:58:12,197 INFO    HandlerThread:119537 [system_monitor.py:finish():190] Stopping system monitor
+2023-09-12 19:58:12,197 DEBUG   SystemMonitor:119537 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-09-12 19:58:12,197 INFO    HandlerThread:119537 [interfaces.py:finish():202] Joined cpu monitor
+2023-09-12 19:58:12,198 DEBUG   SystemMonitor:119537 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-09-12 19:58:12,198 INFO    HandlerThread:119537 [interfaces.py:finish():202] Joined disk monitor
+2023-09-12 19:58:12,265 INFO    HandlerThread:119537 [interfaces.py:finish():202] Joined gpu monitor
+2023-09-12 19:58:12,265 INFO    HandlerThread:119537 [interfaces.py:finish():202] Joined memory monitor
+2023-09-12 19:58:12,265 INFO    HandlerThread:119537 [interfaces.py:finish():202] Joined network monitor
+2023-09-12 19:58:12,265 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:12,265 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 2
+2023-09-12 19:58:12,265 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 3
+2023-09-12 19:58:12,266 DEBUG   SenderThread:119537 [sender.py:send():379] send: stats
+2023-09-12 19:58:12,266 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:12,266 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 3
+2023-09-12 19:58:12,266 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:58:12,266 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:12,266 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 3
+2023-09-12 19:58:12,266 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 4
+2023-09-12 19:58:12,266 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:12,266 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 4
+2023-09-12 19:58:12,266 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:12,267 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 4
+2023-09-12 19:58:12,267 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 5
+2023-09-12 19:58:12,267 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:12,267 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 5
+2023-09-12 19:58:12,267 DEBUG   SenderThread:119537 [sender.py:send():379] send: summary
+2023-09-12 19:58:12,267 INFO    SenderThread:119537 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2023-09-12 19:58:12,267 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:12,267 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 5
+2023-09-12 19:58:12,267 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 6
+2023-09-12 19:58:12,267 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:12,267 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 6
+2023-09-12 19:58:12,267 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:12,267 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 6
+2023-09-12 19:58:12,267 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 7
+2023-09-12 19:58:12,268 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:58:12,268 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:12,268 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 7
+2023-09-12 19:58:12,268 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:12,268 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 7
+2023-09-12 19:58:12,332 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:58:12,333 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_created():271] file/dir created: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/wandb-summary.json
+2023-09-12 19:58:13,191 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-12 19:58:14,333 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:58:15,364 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 8
+2023-09-12 19:58:15,364 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: poll_exit
+2023-09-12 19:58:15,365 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:15,365 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 8
+2023-09-12 19:58:15,365 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:15,365 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 8
+2023-09-12 19:58:15,365 INFO    SenderThread:119537 [job_builder.py:build():281] Attempting to build job artifact
+2023-09-12 19:58:15,365 INFO    SenderThread:119537 [job_builder.py:_get_source_type():393] is repo sourced job
+2023-09-12 19:58:15,367 INFO    SenderThread:119537 [job_builder.py:build():369] adding wandb-job metadata file
+2023-09-12 19:58:15,383 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 9
+2023-09-12 19:58:15,384 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:15,384 DEBUG   SenderThread:119537 [sender.py:send():379] send: artifact
+2023-09-12 19:58:15,384 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 9
+2023-09-12 19:58:16,334 INFO    Thread-12 :119537 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:58:17,429 INFO    SenderThread:119537 [sender.py:send_artifact():1453] sent artifact job-https___github.com_caozh20_rllib_A2SP.git_main.py - {'id': 'QXJ0aWZhY3Q6NTY1NzM5MTU4', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjk2ODY2NjA4', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NTY1NzM5MTU4', 'versionIndex': 0}}}
+2023-09-12 19:58:17,429 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:17,429 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 9
+2023-09-12 19:58:17,429 INFO    SenderThread:119537 [dir_watcher.py:finish():358] shutting down directory watcher
+2023-09-12 19:58:17,429 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: status_report
+2023-09-12 19:58:18,192 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: keepalive
+2023-09-12 19:58:18,335 INFO    SenderThread:119537 [dir_watcher.py:finish():388] scan: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files
+2023-09-12 19:58:18,335 INFO    SenderThread:119537 [dir_watcher.py:finish():402] scan save: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/conda-environment.yaml conda-environment.yaml
+2023-09-12 19:58:18,335 INFO    SenderThread:119537 [dir_watcher.py:finish():402] scan save: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log output.log
+2023-09-12 19:58:18,335 INFO    SenderThread:119537 [dir_watcher.py:finish():402] scan save: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/wandb-metadata.json wandb-metadata.json
+2023-09-12 19:58:18,335 INFO    SenderThread:119537 [dir_watcher.py:finish():402] scan save: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/config.yaml config.yaml
+2023-09-12 19:58:18,337 INFO    SenderThread:119537 [dir_watcher.py:finish():402] scan save: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/requirements.txt requirements.txt
+2023-09-12 19:58:18,337 INFO    SenderThread:119537 [dir_watcher.py:finish():402] scan save: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/wandb-summary.json wandb-summary.json
+2023-09-12 19:58:18,338 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 10
+2023-09-12 19:58:18,338 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:18,338 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 10
+2023-09-12 19:58:18,342 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:18,342 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 10
+2023-09-12 19:58:18,342 INFO    SenderThread:119537 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-12 19:58:19,016 INFO    wandb-upload_0:119537 [upload_job.py:push():131] Uploaded file /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/conda-environment.yaml
+2023-09-12 19:58:19,369 INFO    wandb-upload_3:119537 [upload_job.py:push():131] Uploaded file /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/requirements.txt
+2023-09-12 19:58:19,373 INFO    wandb-upload_2:119537 [upload_job.py:push():131] Uploaded file /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/config.yaml
+2023-09-12 19:58:19,415 INFO    wandb-upload_4:119537 [upload_job.py:push():131] Uploaded file /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/wandb-summary.json
+2023-09-12 19:58:19,891 INFO    wandb-upload_1:119537 [upload_job.py:push():131] Uploaded file /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/files/output.log
+2023-09-12 19:58:20,091 INFO    Thread-11 (_thread_body):119537 [sender.py:transition_state():612] send defer: 11
+2023-09-12 19:58:20,092 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:20,092 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 11
+2023-09-12 19:58:20,092 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:20,092 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 11
+2023-09-12 19:58:20,092 INFO    SenderThread:119537 [file_pusher.py:join():181] waiting for file pusher
+2023-09-12 19:58:20,092 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 12
+2023-09-12 19:58:20,092 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:20,092 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 12
+2023-09-12 19:58:20,092 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:20,093 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 12
+2023-09-12 19:58:20,093 INFO    SenderThread:119537 [file_stream.py:finish():594] file stream finish called
+2023-09-12 19:58:21,223 INFO    SenderThread:119537 [file_stream.py:finish():598] file stream finish is done
+2023-09-12 19:58:21,223 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 13
+2023-09-12 19:58:21,223 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:21,223 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 13
+2023-09-12 19:58:21,223 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:21,223 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 13
+2023-09-12 19:58:21,223 INFO    SenderThread:119537 [sender.py:transition_state():612] send defer: 14
+2023-09-12 19:58:21,223 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: defer
+2023-09-12 19:58:21,223 INFO    HandlerThread:119537 [handler.py:handle_request_defer():170] handle defer: 14
+2023-09-12 19:58:21,224 DEBUG   SenderThread:119537 [sender.py:send():379] send: final
+2023-09-12 19:58:21,224 DEBUG   SenderThread:119537 [sender.py:send():379] send: footer
+2023-09-12 19:58:21,224 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: defer
+2023-09-12 19:58:21,224 INFO    SenderThread:119537 [sender.py:send_request_defer():608] handle sender defer: 14
+2023-09-12 19:58:21,224 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: poll_exit
+2023-09-12 19:58:21,224 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: poll_exit
+2023-09-12 19:58:21,224 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: server_info
+2023-09-12 19:58:21,224 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: server_info
+2023-09-12 19:58:21,226 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: get_summary
+2023-09-12 19:58:21,226 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: sampled_history
+2023-09-12 19:58:21,226 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: internal_messages
+2023-09-12 19:58:21,226 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: job_info
+2023-09-12 19:58:21,524 DEBUG   SenderThread:119537 [sender.py:send_request():406] send_request: job_info
+2023-09-12 19:58:21,525 INFO    MainThread:119537 [wandb_run.py:_footer_history_summary_info():3557] rendering history
+2023-09-12 19:58:21,525 INFO    MainThread:119537 [wandb_run.py:_footer_history_summary_info():3589] rendering summary
+2023-09-12 19:58:21,525 INFO    MainThread:119537 [wandb_run.py:_footer_sync_info():3516] logging synced files
+2023-09-12 19:58:21,525 DEBUG   HandlerThread:119537 [handler.py:handle_request():144] handle_request: shutdown
+2023-09-12 19:58:21,525 INFO    HandlerThread:119537 [handler.py:finish():840] shutting down handler
+2023-09-12 19:58:22,227 INFO    WriterThread:119537 [datastore.py:close():294] close: /home/zhihao/A2SP/rllib_A2SP/wandb/run-20230912_195401-mp7wqqu2/run-mp7wqqu2.wandb
+2023-09-12 19:58:22,525 INFO    SenderThread:119537 [sender.py:finish():1531] shutting down sender
+2023-09-12 19:58:22,525 INFO    SenderThread:119537 [file_pusher.py:finish():175] shutting down file pusher
+2023-09-12 19:58:22,525 INFO    SenderThread:119537 [file_pusher.py:join():181] waiting for file pusher

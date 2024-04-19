@@ -1,0 +1,22 @@
+
+2023-09-12 20:00:14,854	INFO worker.py:1636 -- Started a local Ray instance.
+Traceback (most recent call last):
+  File "/home/zhihao/A2SP/rllib_A2SP/main.py", line 177, in <module>
+    ray.init()
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 1638, in init
+    connect(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 2226, in connect
+    worker.core_worker = ray._raylet.CoreWorker(
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/zhihao/A2SP/rllib_A2SP/main.py", line 177, in <module>
+    ray.init()
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/client_mode_hook.py", line 103, in wrapper
+    return func(*args, **kwargs)
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 1638, in init
+    connect(
+  File "/home/zhihao/anaconda3/envs/rllib/lib/python3.10/site-packages/ray/_private/worker.py", line 2226, in connect
+    worker.core_worker = ray._raylet.CoreWorker(
+KeyboardInterrupt

@@ -1,0 +1,36 @@
+wandb_version: 1
+
+agents_num:
+  desc: null
+  value: 2
+adding_weight:
+  desc: null
+  value: 0.0001
+run:
+  desc: null
+  value: ray.rllib.algorithms.ppo.ppo.PPO
+_wandb:
+  desc: null
+  value:
+    python_version: 3.10.12
+    cli_version: 0.15.10
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1694519641.415277
+    t:
+      1:
+      - 1
+      - 30
+      - 55
+      2:
+      - 1
+      - 30
+      - 55
+      3:
+      - 16
+      - 23
+      4: 3.10.12
+      5: 0.15.10
+      8:
+      - 5
