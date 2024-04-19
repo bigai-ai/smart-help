@@ -41,7 +41,7 @@ from model.end2end import End2End
 from model.helper_without_super import HelperModelWithoutSupervise
 from action import action_list
 import openai
-openai.api_key = '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'
+openai.api_key = 'openai-api-key'
 import re
 import pandas as pd
 # import tiktoken

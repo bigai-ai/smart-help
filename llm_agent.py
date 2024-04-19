@@ -20,7 +20,7 @@ from ray.tune.logger import pretty_print
 
 from ray.rllib.algorithms.algorithm import Algorithm
 import openai
-openai.api_key = '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'
+openai.api_key = 'openai-api-key'
 import re
     
 import cv2
