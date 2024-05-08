@@ -11,7 +11,7 @@ import random
 from gymnasium import Env
 from env.type import sample_type
 
-from env.goal_space import MyGoalSpace
+from env.action_space import MyActionSpace
 import numpy as np
 from env.agent import Agent
 import json
@@ -91,9 +91,9 @@ class SymbolicEnvVision(Env):
         self.observation_space = spaces.Box(low=0, high=256, shape=(3, 224, 224))
         
         self.expert_goal_list = []
-        self.action_space = MyGoalSpace(low=np.asarray((0, 0)),
-                                        high=np.asarray((GOAL_NUM - 1, len(self.object_index2name) - 1)),
-                                        dtype=int)
+        self.action_space = MyActionSpace(low=np.asarray((0, 0)),
+                                          high=np.asarray((GOAL_NUM - 1, len(self.object_index2name) - 1)),
+                                          dtype=int)
         
         self.last_report_time = datetime.datetime.now()
         self.fps_count = 0
