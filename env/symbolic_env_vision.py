@@ -269,7 +269,6 @@ class SymbolicEnvVision(Env):
         remove_len = len(to_remove)
         for i in range(remove_len):
             self.subtask_list.remove(to_remove[remove_len - i - 1])
-            # print("for debug env", "remove", f"Agent{agent_id}", to_remove[remove_len - i - 1])
     
         is_finish = self.check_task()
         return reward, is_finish
@@ -610,23 +609,12 @@ class SymbolicEnvVision(Env):
                 # update goal
                 self._get_reward_and_done(agent_id=1)
 
-        # if len(self.goal_list) != 0 and self.goal_list[0][0] == "ToggleOn" and self._agent_type[1].value == AgentType.AGENT_WITH_TOGGLE_ISSUES.value:
-        #     goal = {"goal": 3, "tar_index": 24}
-        # elif len(self.goal_list) != 0 and self.goal_list[0][0] == "Open" and self._agent_type[1].value == AgentType.AGENT_WITH_OPEN_ISSUES.value:
-        #     goal = {"goal": 5, "tar_index": 24}
-        # elif len(self.goal_list) != 0 and self.goal_list[0][0] == "Close" and self._agent_type[1].value == AgentType.AGENT_WITH_CLOSE_ISSUE.value:
-        #     goal = {"goal": 6, "tar_index": 24}
-
         rew_accumulate = self.execuate_goal(self.goal_dict_to_list(goal), agent_id=0)
 
         rew, terminated = self._get_reward_and_done(agent_id=0)
         truncated = False
         info = {}
 
-        # reward from main_agent
-        # need ???
-        # rew = rew_accumulate + self.goal_complish_reward
-        # self.goal_complish_reward = 0
         rew_accumulate += rew
         # step penalty
         rew_accumulate -= 0.02

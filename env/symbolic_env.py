@@ -622,8 +622,6 @@ class SymbolicEnv(Env):
 
     def get_obs(self, agent_id):
         obj_obs = self.get_symbolic_observations(agent_id=agent_id)
-        # goal_obs = self.get_subtask_obs()
-        # obs = np.concatenate((obj_obs, goal_obs), axis=0)
         agent_obs = self.get_agent_obs(agent_id=agent_id)
         obs = np.concatenate((obj_obs, agent_obs), axis=0)
         return obs

@@ -116,7 +116,6 @@ if __name__ == "__main__":
     SR_list = []
     GSR_list = []
     CR_list = []
-    HE_list = []
     HN_list = []
     reward_list = []
     eposide_len_list = []
