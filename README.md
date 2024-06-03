@@ -1,4 +1,4 @@
-# rllib_A2SP
+# Smart Help: Strategic Opponent Modeling for Proactive and Adaptive Robot Assistance in Households
  
 This is the official implementation of the paper [*Smart Help: Strategic Opponent Modeling for Proactive and Adaptive Robot Assistance in Households*](https://arxiv.org/abs/2404.09001). 
 
