@@ -16,6 +16,10 @@ Our main **contributions** can be summarized as follows:
 
 3）We provide a benchmark model with a joint goal and capability inference, bottleneck reasoning, and helping policy improvement. Strict experiments and the proposed holistic evaluations validate the efficacy of our model.
 
+## Dataset
+
+Visit the following huggingface site to download our dataset: https://huggingface.co/datasets/bigai/SmartHelp 
+
 ## Setup
 
 ### Install Requirements 
