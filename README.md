@@ -18,7 +18,7 @@ Our main **contributions** can be summarized as follows:
 
 ## Dataset
 
-Visit the following huggingface site to download our dataset: https://huggingface.co/datasets/bigai/SmartHelp 
+Visit the following huggingface site to download our dataset: https://huggingface.co/datasets/bigai/SmartHelp/tree/main
 
 ## Setup
 
