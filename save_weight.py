@@ -35,7 +35,7 @@ import shutil
 
 import json
 
-from constants import AgentType
+from env.constants import AgentType
 import wandb
 # from tqdm import tqdm
 

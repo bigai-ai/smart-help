@@ -22,7 +22,7 @@ import h5py
 from tqdm import tqdm
 
 import glob
-from constants import ALL_OBJECTS_TYPE_LENGTH_IN_KITCHEN
+from env.constants import ALL_OBJECTS_TYPE_LENGTH_IN_KITCHEN
 import wandb
 import random
 from torchvision import models

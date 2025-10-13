@@ -33,7 +33,7 @@ from ray.rllib.algorithms.algorithm import Algorithm
 import cv2
 import json
 from env.symbolic_env import SymbolicEnv
-from constants import AgentType
+from env.constants import AgentType
 from model.helper_v3 import HelperModel
 from env.type import sample_type
 from env.task import sample_task

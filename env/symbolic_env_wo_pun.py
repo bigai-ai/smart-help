@@ -19,7 +19,6 @@ import os
 import copy
 from action import action_list
 import action as actions
-from constants import AgentType
 from utils import find_parent_receptacle_plus
 from env.subtask import subtask_list
 from env.goal import goal_list, GOAL_NUM

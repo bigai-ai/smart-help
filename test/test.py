@@ -46,7 +46,7 @@ config = {
     'controller_kwargs': {
         "agentCount": 2,
         "scene": 'FloorPlan2',
-        # "local_executable_path": "/home/zhihao/Downloads/thor-Linux64-local/thor-Linux64-local",
+        "local_executable_path": "/home/zhihao/Downloads/thor-Linux64-local/thor-Linux64-local",
         "renderDepthImage": False,
         "renderInstanceSegmentation": False,
         "visibilityDistance": 30, 
@@ -59,6 +59,7 @@ if __name__ == "__main__":
     total_dict = {}
     task_dict = {}
 
+    
     # ModelCatalog.register_custom_model(
     #     "helper", HelperModel
     # )
@@ -83,8 +84,51 @@ if __name__ == "__main__":
         "helperdep", HelperModelDep
     )
 
+    # 1. 定义你的检查点路径
+    # replace the path below with your checkpoint path
+    # the checkpoint can be found in https://huggingface.co/datasets/bigai/SmartHelp/tree/main
+    # BaseModel: helperdep
+    checkpoint_path = '/home/zhihao/Downloads/ours_dep/839'
+    import os, pickle, pprint
 
-    ray.init()
+    print(f"开始手动加载并修复检查点: {checkpoint_path}")
+
+    main_state_path = os.path.join(checkpoint_path, "algorithm_state.pkl")
+    print(f"正在读取主状态文件: {main_state_path}")
+    with open(main_state_path, "rb") as f:
+        # 我们将这个状态作为最终状态的基础
+        final_state = pickle.load(f)
+    print("主状态加载成功。")
+
+    policy_id = "default_policy"
+    policy_state_path = os.path.join(
+        checkpoint_path, "policies", policy_id, "policy_state.pkl"
+    )
+    print(f"正在读取策略 '{policy_id}' 的状态文件: {policy_state_path}")
+    with open(policy_state_path, "rb") as f:
+        policy_state = pickle.load(f)
+    print("策略状态（模型权重）加载成功。")
+
+    
+    if "worker" not in final_state:
+        final_state["worker"] = {}
+
+    final_state["worker"]["policy_states"] = {
+        policy_id: policy_state
+    }
+    final_state["config"]["disable_env_checking"] = True
+    final_state["config"]["num_rollout_workers"] = 0
+    if "evaluation_num_workers" in final_state["config"]:
+        final_state["config"]["evaluation_num_workers"] = 0
+
+    try:
+        algo = Algorithm.from_state(final_state)
+        print("🎉 算法已成功恢复！可以开始评估。 🎉")
+    except Exception as e:
+        print("\n❌ 在最后一步恢复时依然发生错误，请检查下面的报错信息。")
+        raise e
+    # algo = Algorithm.from_checkpoint('/home/zhihao/Downloads/ours_dep/839')
+    print("======================THE CHECK POINT ======================")
 
     position_list = []
 
@@ -97,7 +141,6 @@ if __name__ == "__main__":
     # )
 
     # 3. 定义测试环境
-
     
     print("======================Start ======================")
     test_env = SymbolicEnv(config=config)
@@ -109,9 +152,9 @@ if __name__ == "__main__":
     # algo = Algorithm.from_checkpoint('/home/zhihao/Downloads/ours_dep/929')
     # algo = Algorithm.from_checkpoint('/home/zhihao/Downloads/ours_wo_pun/839')
     # algo = Algorithm.from_checkpoint('/home/zhihao/Downloads/ours_wo_pun_finetune/229')
-    algo = Algorithm.from_checkpoint('/home/zhihao/Downloads/ours_wo_pun_low_lr/229')
-    algo = Algorithm.from_checkpoint('/home/zhihao/Downloads/ours_dep/839')
-    print("======================THE CHECK POINT ======================")
+    # algo = Algorithm.from_checkpoint('/home/zhihao/Downloads/ours_wo_pun_low_lr/229')
+    # algo = Algorithm.from_checkpoint('/home/zhihao/Downloads/ours_dep/839')
+    # print("======================THE CHECK POINT ======================")
 
     # exit(0)
     # 4. 运行测试

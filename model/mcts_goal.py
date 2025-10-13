@@ -2,7 +2,7 @@ import math
 import random
 from ai2thor.controller import Controller
 from env.symbolic_env import SymbolicEnv
-from constants import AgentType
+from env.constants import AgentType
 
 config = {
     'agents_num': 1,

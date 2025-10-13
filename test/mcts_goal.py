@@ -5,7 +5,7 @@ from ai2thor.controller import Controller
 from env.symbolic_env import SymbolicEnv
 from env.goal import goal_list as action_list
 from env.parse import parse_sub_task
-from constants import AgentType
+from env.constants import AgentType
 
 #random.seed(2023)
 sample_prob = 0.9

@@ -17,7 +17,7 @@ def sample_task(task=None):
 PICKUP_ABLE_OBJECT = ["Apple", "Bowl", "Bread", "ButterKnife",
                        "Cup", "DishSponge", "Egg", "Fork", "Knife", "Lettuce", "Plate", "Potato"
                        , "Spatula", "Spoon", "Tomato"]
-    
+
 PUT_ABLE_OBJECT = [
       "Fridge", "Pan", "Plate",
         "Pot", "StoveBurner", "Toaster"
