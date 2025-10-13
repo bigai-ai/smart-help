@@ -1,7 +1,5 @@
 import torch.nn as nn
 import torch
-from constants import ALL_OBJECTS_TYPE_LENGTH_IN_KITCHEN
-
 
 class ObjectEncoder(nn.Module):
     def __init__(

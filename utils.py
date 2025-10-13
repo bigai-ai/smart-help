@@ -4,7 +4,7 @@ import math
 from ai2thor.controller import Controller
 from typing import Optional, List, Dict
 import copy
-from constants import (
+from env.constants import (
     AgentType, 
     SceneType, 
     VISIBILITY_DISTANCE,

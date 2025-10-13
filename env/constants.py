@@ -12,7 +12,7 @@ from collections import OrderedDict
 from typing import TypeVar, Generic, Tuple, Optional, Union, Dict, List, Any
 
 import torch
-from gym.spaces.dict import Dict as SpaceDict
+from gymnasium.spaces.dict import Dict as SpaceDict
 import torch.nn as nn
 
 

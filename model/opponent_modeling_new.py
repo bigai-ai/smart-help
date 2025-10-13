@@ -6,13 +6,6 @@ import torch.nn.functional as F
 from env.goal import goal_list
 from env.subtask import SUBTASK_NUM
 
-from constants import (
-    AGENT_TYPE_NUMBER,
-    MAX_STEPS,
-    OBJECT_BASE_PROPERTIES_NUMBER,
-    DETAILED_GOALS_TYPE_NUM,
-)
-
 from env.constants import AGENT_TYPE_NUMBER, USED_ACTION_SPACE_LEN, ALL_OBJECTS_TYPE_LENGTH_IN_KITCHEN
 
 class OpponentModeling(nn.Module):

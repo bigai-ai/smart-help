@@ -2,6 +2,10 @@
 # 推荐组成：所有的task，所有的env，所有的type联合，测三遍
 
 task_list = ["MakeBreakfast", "MakeCoffee", "ArrangeRoom"]
+
+import sys
+sys.path.append(".")
+
 import copy
 import json
 
@@ -12,13 +16,13 @@ from ray.rllib.algorithms.algorithm import Algorithm
 
 import json
 from env.symbolic_env import SymbolicEnv
-from model.helper_v3 import HelperModel
+# from model.helper_v3 import HelperModel
 from env.type import sample_type
 from env.task import sample_task
 from model.end2end import End2End
-from model.helper_without_super import HelperModelWithoutSupervise
+# from model.helper_without_super import HelperModelWithoutSupervise
 from model.helper_dep_flow import HelperModelDepFlow
-from model.helper_v4 import HelperModelV4
+# from model.helper_v4 import HelperModelV4
 from env.goal import GOAL_NUM
 from model.helper_dep import HelperModelDep
 
@@ -42,7 +46,7 @@ config = {
     'controller_kwargs': {
         "agentCount": 2,
         "scene": 'FloorPlan2',
-        "local_executable_path": "/home/zhihao/Downloads/thor-Linux64-local/thor-Linux64-local",
+        # "local_executable_path": "/home/zhihao/Downloads/thor-Linux64-local/thor-Linux64-local",
         "renderDepthImage": False,
         "renderInstanceSegmentation": False,
         "visibilityDistance": 30, 
@@ -55,21 +59,21 @@ if __name__ == "__main__":
     total_dict = {}
     task_dict = {}
 
-    ModelCatalog.register_custom_model(
-        "helper", HelperModel
-    )
+    # ModelCatalog.register_custom_model(
+    #     "helper", HelperModel
+    # )
 
     ModelCatalog.register_custom_model(
         "e2e", End2End
     )
 
-    ModelCatalog.register_custom_model(
-        "helperwithoutsuper", HelperModelWithoutSupervise
-    )
+    # ModelCatalog.register_custom_model(
+    #     "helperwithoutsuper", HelperModelWithoutSupervise
+    # )
 
-    ModelCatalog.register_custom_model(
-        "helperv4", HelperModelV4
-    )
+    # ModelCatalog.register_custom_model(
+    #     "helperv4", HelperModelV4
+    # )
 
     ModelCatalog.register_custom_model(
         "helperdepflow", HelperModelDepFlow
