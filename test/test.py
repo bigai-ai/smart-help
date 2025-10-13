@@ -46,6 +46,7 @@ config = {
     'controller_kwargs': {
         "agentCount": 2,
         "scene": 'FloorPlan2',
+        # This folder can be found in https://huggingface.co/datasets/bigai/SmartHelp/tree/main
         "local_executable_path": "/home/zhihao/Downloads/thor-Linux64-local/thor-Linux64-local",
         "renderDepthImage": False,
         "renderInstanceSegmentation": False,
